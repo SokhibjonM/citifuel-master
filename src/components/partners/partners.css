@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media(max-width: 450px){
+    .photo-resp{
+        width: 100px;
+    }
+    .partners-img{
+      width: 60px;
+      margin-left: 1.5rem;
+    }
+}

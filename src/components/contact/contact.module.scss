@@ -1,0 +1,112 @@
+.container {
+  padding: 100px 0;
+  position: relative;
+  /* & > svg:nth-child(1) {
+    position: absolute;
+    top: -10%;
+    right: 0;
+    z-index: -1;
+    @media (max-width: 576px) {
+      top: -50%;
+      right: auto;
+      left: -20%;
+    }
+  }
+  & > svg:nth-child(2) {
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    z-index: -1;
+    @media (max-width: 576px) {
+      display: none;
+    }
+  } */
+  .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    form {
+      max-width: 600px;
+      width: 100%;
+      padding: 50px;
+      background: #fff;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+        rgba(17, 17, 26, 0.1) 0px 4px 16px;
+      -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+        rgba(17, 17, 26, 0.1) 0px 4px 16px;
+      -moz-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+        rgba(17, 17, 26, 0.1) 0px 4px 16px;
+      .title {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 46px;
+        letter-spacing: 0.0005em;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 10px 0 30px;
+        color: var(--deep-gray);
+      }
+      @media (max-width: 576px) {
+        padding: 24px;
+        .title {
+          font-size: 24px;
+          line-height: 48px;
+        }
+      }
+      .input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+        label {
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 20px;
+          letter-spacing: 0.0005em;
+          @media (max-width: 576px) {
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+        input,
+        textarea {
+          height: 50px;
+          outline: 0;
+          border: 0;
+          padding: 10px;
+          border-radius: 4px;
+          box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.05),
+            -1px -1px 20px rgba(0, 0, 0, 0.05);
+          -webkit-box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.05),
+            -1px -1px 20px rgba(0, 0, 0, 0.05);
+          -moz-box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.05),
+            -1px -1px 20px rgba(0, 0, 0, 0.05);
+          margin: 10px 0;
+          font-size: 18px;
+          line-height: 24px;
+          &::placeholder {
+            color: #959595;
+            font-size: 18px;
+            line-height: 24px;
+          }
+          @media (max-width: 576px) {
+            font-size: 16px;
+            line-height: 24px;
+            &::placeholder {
+              font-size: 16px;
+              font-weight: normal;
+            }
+          }
+        }
+        textarea {
+          resize: vertical;
+          height: auto;
+        }
+      }
+      .actions {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
